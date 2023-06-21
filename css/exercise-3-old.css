@@ -1,0 +1,136 @@
+.dark {
+	background-color:darkslategray;
+	color:white;
+}
+
+.bright {
+	background-color:lightskyblue;
+	color:darkblue;
+}
+
+body.padding > section,
+body.padding > header,
+main.padding > section {
+	padding:1rem;
+}
+
+h2.spooky,
+.spooky h2,
+h2.fun,
+.fun h2,
+h2.rainbow,
+.rainbow h2 {
+	text-transform: uppercase;
+	margin:0;
+	margin-bottom:.5rem;
+}
+
+.all-caps {
+	text-transform: uppercase;
+}
+
+.spooky {
+	background:linear-gradient(315deg, #483d8b, black);
+	font-family: 'Poppins', sans-serif;
+	color:ghostwhite;
+}
+
+.big-title {
+	font-size: 3em;
+	line-height: 1.1;
+	text-transform: uppercase;
+	margin-inline:.5em;
+	margin-bottom:0;
+
+	padding-bottom:.3em;
+	
+	border-bottom-width: .1em; 
+	border-bottom-style: dashed;
+	border-bottom-color: slategray;
+}
+
+.font-poppins {
+	font-family: 'Poppins', sans-serif;
+}
+
+.font-montserrat {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.font-silkscreen {
+	font-family: 'Silkscreen', sans-serif;
+}
+
+.rainbow > :nth-child(n+1) {
+	background:red;
+	color:white;
+}
+
+.rainbow > :nth-child(2n) {
+	background:orange;
+}
+
+.rainbow > :nth-child(3n) {
+	background:yellow;
+	color:brown;
+}
+
+.rainbow > :nth-child(4n) {
+	background:greenyellow;
+	color:darkgreen;
+}
+.rainbow > :nth-child(5n) {
+	background:blue;
+}
+
+.rainbow > :nth-child(6n) {
+	background:blueviolet;
+	color:white;
+}
+
+ul.rainbow {
+	list-style: none;
+	padding-left:0;
+}
+
+ul.rainbow > li {
+	padding:.3em;
+}
+
+h2.spooky,
+.spooky h2 {
+	color:gold;
+}
+
+ .spooky h2::before,
+ .spooky h2::after {
+	content : '👻';
+}
+
+.fun
+{
+  background: linear-gradient(145deg,gold 25%,mediumvioletred, gold 75%);
+  background-size: 800%;
+  background-color: salmon !important;
+  animation: fun-gradient 2s linear infinite;
+  color: white !important;
+}
+
+.pink {
+	background-color:rgb(255, 69, 162);
+	color:white;
+}
+
+.lime {
+	background-color:lime;
+	color:black;
+}
+
+@keyframes fun-gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	100% {
+		background-position: 100% 0%;
+	}
+}

@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&family=Nunito&family=Open+Sans&family=Poppins&family=Merriweather&family=Montserrat&family=Quicksand&family=Lobster&family=Pacifico&family=Caveat');
+
+nav.helper-nav {
+  padding-top: .6rem;
+  padding-bottom: .6rem; 
+  border-bottom:3px solid lightgrey;
+  margin-bottom:.5rem;
+  background-color:whitesmoke;
+  position:sticky;
+  top:0;
+}
+
+:has(.dark) nav.helper-nav {
+  margin-bottom:0;
+}
+
+:not(:has(.dark)) nav.helper-nav {
+  margin-inline:-.5rem;
+  margin-top:-.5rem;
+}
+
+nav.helper-nav ul {
+  max-width:510px;
+  
+  margin-inline:auto;
+  margin-top:0;
+  margin-bottom:0;
+  padding-left:0;
+  
+  display: flex;
+  justify-content: space-evenly;
+  
+  list-style: none;
+}
+
+nav.helper-nav li {
+  background-color:lightgrey;
+  border-radius:.7rem;
+  padding:.15rem .5rem .1rem .5rem;
+  font-size:.8rem;
+  font-weight:bold;
+  border:1px solid darkgrey;
+}
+
+nav.helper-nav a {
+  font-family: 'Nunito', sans-serif;
+  text-decoration:none;
+  color:#444444;
+}
+
+nav.helper-nav li:hover{
+  background-color:whitesmoke;
+  border-color:darkgrey;
+}

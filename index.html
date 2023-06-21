@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <style> 
+      h1{background-color: mediumvioletred; text-align: center;} 
+      section {background-color: rgba(68,68,68,0.5); max-width: 75%; padding: 50px; margin: 100px;} 
+      .first_section {background-color: #faebd7;}
+      main {background-color: #DAA520;}
+      p {color: navy; max-width: 25%; padding: 25px; margin: 25px;}
+      ol {color: teal;}
+      .something {color: green;}
+      .html_elements {color: pink;}
+      .dark {background-color: darkslategrey; color: white}
+    </style>
+    <!-- in style, when !important is added at the end, then that will be put above all other styling 
+    example: section {background-color: rgba(68,68,68,0.5)!important;}  -->
+
+    <!-- Nav bar: These two elements add nav bar -->
+    <link rel="stylesheet" href="/css/nav-css.css">
+    <script src="/scripts/nav-script.js" defer></script>
+    <!-- /Nav bar -->
+    <title>Getting started with HTML and CSS</title>
+    <!-- Everything that´s inside the head won´t show in the page, it´s metadata -->
+  
+  </head>
+
+
+  <body>
+  <main>    
+    <h1>Getting started with HTML and CSS</h1>
+
+    
+  <section class="first_section">
+    <h2>Why learn HTML and CSS?</h2>
+    
+    <!-- /Every element must be inside of a tag-->
+    <p>
+      <strong>HTML (or HyperText Markup Language)</strong> and <strong>CSS (or Cascading Style Sheets)</strong> are super handy computer languages for making things on the web. Every webpage that you go to using your web browser uses HTML and CSS. HTML is used to "mark up" content (such as this text) and CSS is used to style it. Without either of these, this would look like a big blob of text.
+    </p>
+
+    <h3>HTML basics</h3>
+    
+    <p>
+      Here are <span class="something"> some basic ideas</span> to help you understand and get started with HTML:
+    </p>
+    <ol>
+      <li>Elements are created using <em>tags</em>.</li>
+      <li>You can recognize a <mark>tag</mark> by its use of triangle brackets:
+    &lt;&nbsp;and&nbsp;&gt; </li>
+      <li>Tags usually <small>(though not always)</small> come in pairs, with the content in between.
+      <li>Both the <em><mark>start</mark></em> and end tags of an element share the same name, however the end tag also includes a forward slash. 
+    Most elements can (and often do) contain other elements.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h3>Using CSS</h3>
+  
+    <p>
+      HTML elements <span class="html_elements"> don't have style per se</span>, however most have a default style that is applied if no other style rules exist. In CSS, we use "selectors" to choose what we want to be affected by a rule, and then we provide a list of properties and the values that we want them to be.
+    </p>
+  </section>
+
+  <section class="dark"> 
+    <h4>Adding images</h4>
+
+    <p>
+      Images play an integral part in designing an engaging and aesthetically pleasing website. When creating a design, it's sometimes helpful to be able to see what it would look like with a picture. If we don't already have a picture handy, it can be difficult to quickly find a placeholder. Enter <a href="https://picsum.photos">Lorem Picsum</a>, a web tool that provides placeholder images of sizes that you specify. They can be fully random (and change everytime the page refreshes) or otherwise you can specify a "seed" to have the same image show up every time. Check out these images or put in your own!
+    </p>
+    
+    <!-- /alt it´s used to write a text that will show in case the image link is broken-->
+    <img src="https://picsum.photos/seed/abcd/500/300" alt="some mountains">
+    <img src="https://picsum.photos/seed/efgh/400/300" alt="some bridge in Paris for sure">
+    <img src="https://picsum.photos/seed/ijkl/400/400" alt="night sky with stars">
+    <img src="https://picsum.photos/seed/qrst/800/250" alt="NYC">
+    
+    <p>
+      <strong>Note:</strong> If you have your own photos that you want to use, you can upload them to CodeSandbox by clicking on the &uarr; (Upload Files) button at the top of the Explorer pane. This will store them on the Internet and provide you a URL that you can use to access each one.
+    </p>
+
+  </section>
+
+  </main>
+  </body>
+</html>

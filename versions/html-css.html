@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!-- Nav bar: These two elements add nav bar -->
+    <link rel="stylesheet" href="/css/nav-css.css">
+    <script src="/scripts/nav-script.js" defer></script>
+    <!-- /Nav bar -->
+		<title>Getting started with HTML and CSS</title>
+		<style>
+			body {
+				font-family:'Segoe UI', sans-serif;
+        margin:0;
+			}
+			section {
+				background-color:lightgray;
+        max-width:640px;
+        padding:10px 30px;
+        margin:auto;
+			}
+			header {
+				background-color:mediumvioletred;
+				color:rgb(255,215,0);
+        padding:10px;
+			}
+
+			main {
+				background-color:goldenrod;
+        padding:10px;
+			}
+			h1 {
+        background-color:rgb(68, 68, 68);
+        max-width:600px;
+        padding:10px;
+        margin:auto;
+        text-align:center;
+        text-transform: uppercase;
+        font-size:250%;
+        line-height: 1;
+			}
+      img {
+        max-width:100%;
+      } 			
+      h1 em {
+				color:skyblue;
+			}
+      .big {
+        font-size:160%;
+      }
+			.dark {
+				background-color:darkslategray;
+				color:white;
+      }
+      .header-img {
+        width:100%;
+        display:block;
+        max-width:620px;
+        margin:auto;
+      }
+		</style>
+  </head>
+  <body>
+    <header>
+        <img class="header-img" src="https://picsum.photos/seed/qrst/800/250" alt="">
+      <h1>Getting started with <br><span class="big"><em>HTML</em> and <em>CSS</em></span></h1>
+    </header>
+    <main>
+      <section>
+        <h2>Why learn HTML and CSS?</h2>
+        <p><strong>HTML (or HyperText Markup Language)</strong> and <strong>CSS (or Cascading Style Sheets)</strong> are super handy computer languages for making things on the web. Every webpage that you go to using your web browser uses HTML and CSS. HTML is used to "mark up" content (such as this text) and CSS is used to style it. Without either of these, this would look like a big blob of text.</p>
+      </section>
+      <section class="dark">
+        <h2>HTML basics</h2>
+        <p>Here are some basic ideas to help you understand and get started with HTML:</p>
+        <ul>
+          <li>HTML is made of elements. Elements are created using tags.</li>
+          <li>
+            You can recognize a tag by its use of triangle brackets:
+            &lt;&nbsp;and&nbsp;&gt;
+          </li>
+          <li>
+            Tags usually (though not always) come in pairs, with the content in
+            between.
+          </li>
+          <li>
+            Both the start and end tags of an element share the same name,
+            however the end tag also includes a forward slash.
+          </li>
+          <li>Most elements can (and often do) contain other elements.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Using CSS</h2>
+        <p>
+          HTML elements don't have style per se, however most have a default
+          style that is applied if no other style rules exist. In CSS, we use
+          "selectors" to choose what we want to be affected by a rule, and then
+          we provide a list of properties and the values that we want them to
+          be.
+        </p>
+      </section>
+      <section class="dark">
+        <h2>Adding images</h2>
+
+        <p>
+          Images play an integral part in designing an engaging and aesthetically pleasing website. When creating a design, it's sometimes helpful to be able to see what it would look like with a picture. If we don't already have a picture handy, it can be difficult to quickly find a placeholder. Enter Lorem Picsum (<a href="https://picsum.photos">https://picsum.photos</a>), a web tool that provides placeholder images of sizes that you specify. They can be fully random (and change everytime the page refreshes) or otherwise you can specify a "seed" to have the same image show up every time. Check out these images or put in your own!
+        </p>
+        <img src="https://picsum.photos/seed/abcd/300/350">
+        <img src="https://picsum.photos/seed/efgh/200/350">
+        <img src="https://picsum.photos/seed/ijkl/505/275">
+        <p>
+						<em>Note: If you have your own photos that you want to use, you can upload them to CodeSandbox by clicking on the &uarr; (Upload Files) button at the top of the Explorer pane. This will store them on the Internet and provide you a URL that you can use to access each one.</em>
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
